@@ -1,1 +1,1 @@
-# fr-training-calculator-app
+# Front-end Training Calculator App

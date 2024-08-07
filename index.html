@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+    https://www.figma.com/design/UWebnpHGgnkR36dWs4vidq/calculator-(Community)?node-id=0-1&t=1tIv1h36TTizpjWe-0
+    -->
+  </head>
+  <body>
+    <main class="main">
+      <h1>Calculator</h1>
+
+      <div class="input-container">
+        <label for="expression">Enter expression</label>
+        <input
+          type="text"
+          name="expression"
+          id="expression"
+          placeholder="e.g 2+2"
+        />
+      </div>
+
+      <div class="functions-container">
+        <h4>Functions</h4>
+
+        <div class="functions-btns">
+          <!-- Add -->
+          <button class="function">
+            <img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/ios/50/add--v1.png"
+              alt="add--v1"
+            />Add
+          </button>
+          <!-- Subtract -->
+          <button class="function">
+            <img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/ios/50/minus-math.png"
+              alt="minus-math"
+            />
+            Subtract
+          </button>
+
+          <!-- Multiply -->
+          <button class="function">
+            <img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/ios/50/multiply.png"
+              alt="multiply"
+            />Multiply
+          </button>
+
+          <!-- Delete -->
+          <button class="function">
+            <img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/ios/50/divide.png"
+              alt="divide"
+            />
+            Divide
+          </button>
+
+          <button class="reset-btn">Reset</button>
+          <button class="calculate-btn">Calculate</button>
+        </div>
+      </div>
+
+      <div id="result">
+        <span>Result</span>
+        <input type="text" name="result" id="result" value="42" />
+      </div>
+
+      <div id="history">
+        <h4>History</h4>
+        <div class="history-container">
+          <div class="equation-container">
+            <img
+              width="32"
+              height="32"
+              src="https://img.icons8.com/color/48/order-history.png"
+              alt="order-history"
+            />
+            <div>
+              <p class="history-function">Addition</p>
+              <span class="history-equation">1+2</span>
+            </div>
+          </div>
+
+          <span class="history-result">3</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
